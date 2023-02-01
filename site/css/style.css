@@ -344,6 +344,10 @@ header.sticky a {
   .responsive {
     display: flex;
   }
+
+  .responsive-about {
+    text-align: center;
+  }
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -420,6 +424,10 @@ header.sticky a {
 
   .responsive-contact {
     text-align: center !important;
+  }
+
+  .responsive-about {
+    text-align: center;
   }
 }
 
