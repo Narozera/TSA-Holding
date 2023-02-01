@@ -27,35 +27,12 @@
   </head>
 
   <body>
-    <header class="header" id="header">
-      <!-- <div class="header__logo">
-        <img src="img/logo.png" alt="" />
-        <a href="#" id="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-      </div>
-
-      <div class="nav">
-        <ul>
-          <li>
-            <a href="#one_paralax" class="active">Home</a>
-          </li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#ourBrands">Brands</a></li>
-          <li><a href="#contact">Contact US</a></li>
-        </ul>
-      </div>  -->
- 
+    <header class="header"  id="header"> 
         <nav class="navbar navbar-expand-md navbar-custom">
           <div class="container">
-            <div class="text-center">
-              <a href="index.html" class="navbar-brand line">
-                <img src="img/Tsa holding 500x500.png" width="200" height="130">
-              </a>
-            </div>
-
+              
+                <img class="img-fluid" src="img/tsa-nova-idea.png" width="200">
+             
               <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
                 <i class="fas fa-bars text-white fa-2x"></i>
               </button>
@@ -63,7 +40,7 @@
           <div class="collapse navbar-collapse" id="nav-principal">
             <ul id="navegacao" class="navbar-nav ml-auto"> <!-- Inicio Lista -->
                <li class="nav-item">
-                <a href="#one_paralax" class="nav-link hover-underline-animation p-2 active">Home</a>
+                <a href="#one_paralax" class="nav-link hover-underline-animation p-2">Home</a>
               </li>
               <li class="nav-item">
                 <a href="#about" class="nav-link hover-underline-animation p-2">About</a>
@@ -91,9 +68,9 @@
 
     <section id="one_paralax" class="d-flex one_paralax"> <!-- Inicio seção home -->
 
-      <div class="container align-self-center p-2"> <!-- container -->
+      <div class="container p-2 align-self-center"> <!-- container -->
         <div class="row"> <!-- row -->
-          <div class="col-md-12"> 
+          <div class="col-md-6"> 
 
                 <div class="item animate__animated animate__fadeInUp">
 
@@ -109,55 +86,55 @@
         </div>
     </section> <!-- Fim seção home -->
 
-    <section class="text-center d-flex" id="about">
-      <div class="container align-self-center">
+    <section class="d-flex"  id="about">
+      <div class="align-self-center p-5" style="background-color: #f8f8f8;">
+
         <div class="row">
-          <div class="col-md-12">
-            <h1 class="p-5"><span>ABOUT </span>TSA HOLDING</h1>
-            
-            <p class="font-size-about"> 
-              TSA Capital Holding Ltd is an operating holding company that owns
-              a number of companies related to education, technology and
-              marketing, which operates in Latin America and some European and
-              Asian countries.
+          <div class="col-md-6 responsive-about">
+            <h1 class="mt-4">ABOUT</h1>
+            <br>
+            <h1 class="mb-4">TSA HOLDING</h1>
+
+            <p class="mt-3"> 
+              To meet the needs of the modern trader, our world-class brokerage services are spearheaded by market experts with extensive knowledge and experience in the industry. Our commitment to growth and innovation keep us ahead of the curve, while we continue to uphold the highest professional standard for our clients.
             </p>
-
-
-            <p class="font-size-about margin-bottom-about">
+            <p class="margin-bottom-about">
               TSA Capital Holding Ltd is also actively involved in the
               production and sale of online courses, as well as consulting,
               promotion, digital media, and marketing services for its clients.
             </p>
           </div>
+
+          <div class="col-md-6 responsive">
+            <img src="img/Ideia Foto Tech.png" width="100%" height="50%">
+          </div>
+
           </div>
         </div>
-      </div>
     </section>
 
-    <section class="d-flex text-center" id="inspiration">
-      <div class="container align-self-center">
-        <div class="row">
-          <img class="img-fluid" src="img/Ideia Foto Tech.png" width="100%">
-        <p>
-          We inspire lives and move forward side by side with technology, so
-          that people can explore possibilities and gain knowledge, achieve
-          goals, and grow, always succeeding in their objectives.
-        </p>
-      </div>
-      </div>
-    </section>
+
 
     <section class="d-flex" id="ourBrands">
       <div class="container align-self-center">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h1 class="mt-3" style="margin-bottom: 40px">
+            <h1 class="mt-5">
               OUR BRANDS
             </h1>
+            <br>
+            <table class="ml-auto mr-auto" style="width: 368px;">
+              <tr>
+                <td>
+                  <span>We inspire lives and move forward side by side with technology, so that people can explore possibilities and gain knowledge, achieve goals, and grow, always succeeding in their objectives.</span>
+                </td>
+              </tr>
+            </table> 
+           
           </div>
         </div>
 
-        <div class="row">
+        <div class="row mt-3">
           <div class="col-md-4 text-center margin-bottom-ourBrands">
             <img
               class="img-fluid"
@@ -166,7 +143,7 @@
               height="80%"
               style="margin-bottom: 20px"
             />
-            <p>
+            <p class="mb-5">
               HD TRADE PARTICIPAÇÕES LTDA<br />
               TRADE STARS BRAZIL
             </p>
@@ -179,7 +156,7 @@
               height="80%"
               style="margin-bottom: 20px"
             />
-            <p>
+            <p class="mb-5">
               MN TECNOLOGIA LTDA<br />
               MONEY NOW NEWS
             </p>
@@ -192,7 +169,7 @@
               height="80%"
               style="margin-bottom: 20px"
             />
-            <p>
+            <p class="mb-5">
               BLACK MENTORY AGENCY LTDA<br />
               TRADE STARS LATAM
             </p>
@@ -204,15 +181,15 @@
     <section class="p-5" id="contact">
       <div>
         <div class="row">
-          <div class="col-md-6 align-self-center text-center">
+          <div class="col-md-6 align-self-center responsive-contact">
           <h1>CONTACT US</h1>
-          <p>
+          <a href="mailto:tsacapitalholding@gmail.com?subject=Contato" style="color: black;">
             tsacapitalholding@gmail.com
-          </p>
+          </a>
         </div>
 
         <div class="col-md-6">
-        <img class="img-fluid" src="img/contact.png" alt="" />
+        <img class="img-fluid" src="img/Predios.png" alt="" />
       </div>
 
       </div>

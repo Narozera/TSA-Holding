@@ -1,3 +1,10 @@
+* {
+  font-family: "Karla";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url("../fontes/Montserrat-Bold.ttf");
@@ -18,26 +25,19 @@
   src: url("../fontes/Karla-Light.ttf");
 }
 
-* {
-  font-family: "Karla";
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 /* Scroll */
 body::-webkit-scrollbar {
   width: 12px; /* width of the entire scrollbar */
 }
 
 body::-webkit-scrollbar-track {
-  background: #171614; /* color of the tracking area */
+  background: #181818; /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ccac00; /* color of the scroll thumb */
+  background-color: #193153; /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
-  border: 3px solid #171614; /* creates padding around scroll thumb */
+  border: 3px solid #181818; /* creates padding around scroll thumb */
 }
 
 html,
@@ -47,20 +47,46 @@ body {
 }
 
 body {
-  background: #171614;
+  background: #181818;
 }
 /*---------- Header --------- */
-#header {
-  background: #171614;
+header {
+  position: fixed;
+  background: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 2.5rem 6.25rem;
+  z-index: 100;
+}
+
+header.sticky {
+  padding: 5px 100px;
+  background: #181818;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky a {
+  color: white;
+}
+
+.sticky {
+  background: white;
+  transition: 0.5s;
 }
 
 .header ul li a {
-  font-size: 1.6em;
+  font-size: 1.2em;
+  display: inline-block;
 }
 
 .header {
-  padding: 15px 40px;
-  justify-content: end;
+  padding: 15px;
   left: 0;
   top: 0;
   width: 100%;
@@ -74,17 +100,13 @@ body {
 }
 
 .navbar-custom a:hover {
-  color: #ccac00;
-}
-
-.botao-custom {
-  color: #ccac00;
+  color: #0059d6;
 }
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #ccac00;
+  color: #0059d6;
 }
 
 .hover-underline-animation:after {
@@ -95,7 +117,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #ccac00;
+  background-color: #0059d6;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -144,25 +166,6 @@ body {
   margin-left: auto;
 }
 
-#inspiration {
-  background: rgb(23, 22, 20);
-  background: linear-gradient(
-    180deg,
-    rgba(23, 22, 20, 1) 0%,
-    rgba(246, 246, 246, 1) 3%,
-    rgba(246, 246, 246, 1) 97%,
-    rgba(23, 22, 20, 1) 100%
-  );
-  color: white;
-  height: 100vh;
-}
-
-#inspiration p {
-  color: black;
-  font-size: 1.8em;
-  font-family: "Lato", sans-serif;
-}
-
 .one_paralax {
   background: url(../img/one-paralax.png);
   background-size: cover;
@@ -177,21 +180,20 @@ body {
 
 .one_paralax h1 {
   display: inline-block;
-  font-size: 4em;
   color: white;
 }
 
 #one_paralax {
-  height: 100vh;
+  height: 600px;
 }
 
 #one_paralax h1 {
-  font-size: 4em;
+  font-size: 2.5em;
   text-shadow: 1px black;
 }
 
 .background-footer {
-  background: #171614;
+  background: #181818;
 }
 
 .alinhamento-footer-itens {
@@ -199,42 +201,30 @@ body {
 }
 
 #about {
-  background: #171614;
-  color: white;
-  height: 100vh;
+  background: white;
+  color: black;
 }
 
 #about span {
   font-size: 0.8em;
 }
 
-#about h1 {
-  font-size: 8em;
-}
-
 #about p {
-  font-size: 2.2em;
+  font-size: 1.2em;
 }
 
 .font-size-about {
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 #about h1 {
   display: inline-block;
-  font-size: 4em;
-  background-image: linear-gradient(to right, white, white, #ccac00);
-  color: black;
-
-  /* Adicionado: */
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: 2.5em;
+  color: #181818;
 }
 
 #ourBrands {
-  background: #171614;
-  height: 100vh;
+  background: #181818;
   padding: 10px;
   color: white;
 }
@@ -242,13 +232,7 @@ body {
 #ourBrands h1 {
   display: inline-block;
   font-size: 4em;
-  background-image: linear-gradient(to right, white, white, #ccac00);
-  color: black;
-
-  /* Adicionado: */
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 #ourBrands p {
@@ -256,13 +240,13 @@ body {
 }
 
 /* .contact {
-  background: #171614;
+  background: #181818;
   padding: 0 40px 60px 40px;
   display: flex;
   flex-direction: column;
 }
 .contact .content {
-  color: #171614;
+  color: #181818;
   background: #f6f6f6;
   padding: 20px;
   text-align: center;
@@ -271,18 +255,11 @@ body {
   font-size: 35px;
 }
 .contact .content header a {
-  color: #171614;
+  color: #181818;
   text-decoration: underline;
 } */
 #contact {
-  background: rgb(23, 22, 20);
-  background: linear-gradient(
-    180deg,
-    rgba(23, 22, 20, 1) 0%,
-    rgba(246, 246, 246, 1) 3%,
-    rgba(246, 246, 246, 1) 97%,
-    rgba(23, 22, 20, 1) 100%
-  );
+  background: rgba(246, 246, 246, 1);
 }
 
 .display-flex-footer {
@@ -299,6 +276,14 @@ body {
     align-self: center;
   }
 
+  header {
+    background: #181818;
+  }
+
+  #one_paralax {
+    height: 100vh;
+  }
+
   .text-center-footer-ml {
     margin-left: unset;
     text-align: center;
@@ -311,18 +296,6 @@ body {
     display: block;
   }
 
-  #inspiration {
-    background: rgb(23, 22, 20);
-    background: linear-gradient(
-      180deg,
-      rgba(23, 22, 20, 1) 0%,
-      rgba(246, 246, 246, 1) 3%,
-      rgba(246, 246, 246, 1) 97%,
-      rgba(23, 22, 20, 1) 100%
-    );
-    height: 100vh;
-  }
-
   #about {
     height: 100vh;
   }
@@ -333,6 +306,7 @@ body {
 
   #ourBrands {
     height: 100vh;
+    margin-top: 120px;
   }
 
   #one_paralax h1 {
@@ -356,20 +330,19 @@ body {
     width: 80%;
   }
 
-  #inspiration {
-    height: 100vh;
+  .responsive-contact {
+    text-align: center !important;
   }
 
-  #inspiration img {
-    height: 300px;
-    width: 95%;
+  #about img {
+    width: 250px;
+    height: 280px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #inspiration p {
-    margin-top: 10px;
-    font-size: 1.2em;
+  .responsive {
+    display: flex;
   }
 }
 
@@ -377,6 +350,10 @@ body {
 @media (min-width: 345px) and (max-width: 575.98px) {
   .centralizar-sm {
     align-self: center;
+  }
+
+  header {
+    background: #181818;
   }
 
   .text-center-footer-ml {
@@ -387,24 +364,28 @@ body {
     text-align: center;
   }
 
+  .responsive {
+    display: flex;
+  }
+
+  #about img {
+    width: 550px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .display-flex-footer {
     display: block;
   }
 
-  #inspiration {
-    background: rgb(23, 22, 20);
-    background: linear-gradient(
-      180deg,
-      rgba(23, 22, 20, 1) 0%,
-      rgba(246, 246, 246, 1) 3%,
-      rgba(246, 246, 246, 1) 97%,
-      rgba(23, 22, 20, 1) 100%
-    );
+  #about {
     height: 100vh;
   }
 
-  #about {
-    height: 100vh;
+  #about img {
+    width: 280px;
+    height: 220px;
   }
 
   #about p {
@@ -412,7 +393,8 @@ body {
   }
 
   #ourBrands {
-    height: 100vh;
+    height: 100%;
+    margin-top: 100px;
   }
 
   #one_paralax h1 {
@@ -436,16 +418,8 @@ body {
     width: 90%;
   }
 
-  #inspiration img {
-    height: 300px;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #inspiration p {
-    margin-top: 10px;
-    font-size: 1.2em;
+  .responsive-contact {
+    text-align: center !important;
   }
 }
 
@@ -464,24 +438,27 @@ body {
     display: block;
   }
 
-  #inspiration {
-    height: 100vh;
-  }
-
-  #inspiration p {
-    font-size: 1.4em;
-  }
-
   #about {
-    height: 100vh;
+    height: 100%;
+  }
+
+  #about img {
+    width: 500px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .responsive {
+    display: flex;
   }
 
   #ourBrands {
-    height: 100vh;
+    height: 100%;
   }
 
   #one_paralax h1 {
-    font-size: 2em;
+    font-size: 2.3em;
   }
 
   #about h1 {
@@ -493,7 +470,7 @@ body {
   }
 
   #ourBrands h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   #ourBrands p {
@@ -504,26 +481,10 @@ body {
     height: 100px;
     width: 70%;
   }
-
-  #inspiration img {
-    height: 400px;
-  }
 }
 
 /*// Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  #inspiration {
-    height: 570px;
-  }
-
-  #inspiration img {
-    height: 500px;
-  }
-
-  #inspiration p {
-    font-size: 1.4em;
-  }
-
   #about {
     height: 100%;
   }
@@ -540,16 +501,23 @@ body {
     margin-bottom: 30px;
   }
 
-  #inspiration {
-    height: 700px;
-  }
-
   #one_paralax h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
 
   #about h1 {
     font-size: 3em;
+  }
+
+  #about img {
+    width: 350px;
+    height: 400px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .responsive {
+    display: flex;
   }
 
   #ourBrands h1 {
@@ -585,24 +553,19 @@ body {
     font-size: 3em;
   }
 
-  #inspiration {
-    height: 100vh;
-  }
-
-  #inspiration img {
-    height: 400px;
-  }
-
-  #inspiration p {
-    font-size: 1.6em;
-  }
-
   #about {
     height: 100vh;
   }
 
-  #ourBrands {
-    height: 100vh;
+  #about img {
+    width: 480px;
+    height: 600px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .responsive {
+    display: flex;
   }
 
   #ourBrands img {
@@ -615,11 +578,11 @@ body {
   }
 
   #about h1 {
-    font-size: 5em;
+    font-size: 3em;
   }
 
   #about p {
-    font-size: 2em;
+    font-size: 1.6em;
   }
 
   #ourBrands h1 {
@@ -630,86 +593,70 @@ body {
 /*// Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1400.98px) {
   #one_paralax h1 {
+    font-size: 3em;
+  }
+
+  #one_paralax {
+    height: 100vh;
+  }
+
+  #about p {
+    font-size: 1.3em;
+  }
+
+  #about h1 {
+    font-size: 3em;
+  }
+
+  #ourBrands {
+    padding: 20px;
+  }
+
+  #ourBrands h1 {
     font-size: 4em;
   }
 
-  #inspiration {
-    height: 100vh;
+  #about img {
+    width: 570px;
+    height: 600px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
-  #inspiration p {
-    font-size: 1.6em;
-  }
-
-  #about {
-    height: 100vh;
-  }
-
-  #about p {
-    font-size: 2.2em;
-  }
-
-  #about h1 {
-    font-size: 6.3em;
-  }
-
-  #ourBrands {
-    height: 100vh;
-  }
-
-  #inspiration img {
-    height: 500px;
-  }
-
-  #ourBrands h1 {
-    font-size: 5em;
+  .responsive {
+    display: flex;
   }
 }
-
-@media (min-width: 1401px) and (min-height: 1100px) {
-  #one_paralax h1 {
-    font-size: 6em;
-  }
-
-  #about p {
-    font-size: 2em;
-  }
-
-  #about h1 {
-    font-size: 6em;
-  }
-
-  #inspiration {
-    height: 100vh;
-  }
-
-  #inspiration img {
-    height: 50%;
-  }
-
+@media (min-width: 1401px) {
   #about {
     height: 100vh;
   }
 
-  #ourBrands {
-    height: 100vh;
+  #about h1 {
+    font-size: 3em;
   }
 
-  #inspiration p {
-    font-size: 2em;
+  #about p {
+    font-size: 1.4em;
   }
 
-  #ourBrands img {
-    height: 130px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+  #about img {
+    width: 900px;
+    height: 500px;
+    margin-bottom: auto;
   }
 
-  #ourBrands p {
-    font-size: 2em;
+  .responsive {
+    display: flex;
+  }
+  #about img {
+    width: 900px;
+    height: 600px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 
-  #ourBrands h1 {
-    font-size: 6em;
+  .responsive {
+    display: flex;
   }
 }
