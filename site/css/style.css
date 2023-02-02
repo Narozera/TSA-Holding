@@ -328,7 +328,7 @@ header.sticky a:hover {
   }
 
   #about {
-    height: 100vh;
+    height: 100%;
   }
 
   #about p {
@@ -337,7 +337,6 @@ header.sticky a:hover {
 
   #ourBrands {
     height: 100%;
-    margin-top: 140px;
   }
 
   #one_paralax h1 {
@@ -357,7 +356,7 @@ header.sticky a:hover {
   }
 
   #ourBrands img {
-    height: 150px;
+    height: 200px;
     width: 100%;
   }
 
@@ -378,6 +377,10 @@ header.sticky a:hover {
 
   .responsive-about {
     text-align: center;
+  }
+
+  .span-responsive {
+    width: 221px;
   }
 }
 
@@ -425,7 +428,6 @@ header.sticky a:hover {
 
   #ourBrands {
     height: 100%;
-    margin-top: 100px;
   }
 
   #one_paralax {
@@ -449,7 +451,7 @@ header.sticky a:hover {
   }
 
   #ourBrands img {
-    height: 150px;
+    height: 200px;
     width: 100%;
   }
 
@@ -459,6 +461,10 @@ header.sticky a:hover {
 
   .responsive-about {
     text-align: center;
+  }
+
+  .span-responsive {
+    width: 276px;
   }
 }
 
@@ -520,6 +526,10 @@ header.sticky a:hover {
     height: 100px;
     width: 70%;
   }
+
+  .span-responsive {
+    width: 276px;
+  }
 }
 
 /*// Medium devices (tablets, 768px and up) */
@@ -570,6 +580,10 @@ header.sticky a:hover {
   #ourBrands img {
     width: 100%;
     height: 125px;
+  }
+
+  .span-responsive {
+    width: 276px;
   }
 }
 
@@ -627,6 +641,10 @@ header.sticky a:hover {
   #ourBrands h1 {
     font-size: 4em;
   }
+
+  .span-responsive {
+    width: 368px;
+  }
 }
 
 /*// Extra large devices (large desktops, 1200px and up) */
@@ -665,6 +683,10 @@ header.sticky a:hover {
   .responsive {
     display: flex;
   }
+
+  .span-responsive {
+    width: 368px;
+  }
 }
 @media (min-width: 1401px) {
   #about {
@@ -697,5 +719,9 @@ header.sticky a:hover {
 
   .responsive {
     display: flex;
+  }
+
+  .span-responsive {
+    width: 368px;
   }
 }
