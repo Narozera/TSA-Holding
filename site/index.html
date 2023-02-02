@@ -39,16 +39,16 @@
           <div class="collapse navbar-collapse" id="nav-principal">
             <ul id="navegacao" class="navbar-nav ml-auto"> <!-- Inicio Lista -->
                <li class="nav-item">
-                <a href="#one_paralax" class="nav-link hover-underline-animation p-2">Home</a>
+                <a href="#one_paralax" data-i18n-key="nav-1" class="nav-link hover-underline-animation p-2">Home</a>
               </li>
               <li class="nav-item">
-                <a href="#about" class="nav-link hover-underline-animation p-2">About</a>
+                <a href="#about" data-i18n-key="nav-2" class="nav-link hover-underline-animation p-2">About</a>
               </li>
               <li class="nav-item">
-                <a href="#ourBrands" class="nav-link hover-underline-animation p-2">Brands</a>
+                <a href="#ourBrands" data-i18n-key="nav-3" class="nav-link hover-underline-animation p-2">Brands</a>
               </li>
               <li class="nav-item">
-                <a href="#contact" class="nav-link hover-underline-animation p-2">Contact US</a>
+                <a href="#contact" data-i18n-key="nav-4" class="nav-link hover-underline-animation p-2">Contact US</a>
               </li> 
             </div>
             </div>
@@ -73,7 +73,7 @@
 
                 <div class="item animate__animated animate__fadeInUp">
 
-                  <h1 id="animate-home"
+                  <h1 data-i18n-key="one_paralax-h1" id="animate-home"
                   class="animate__animated animate__backInDown text-center">
                     Our ecosystem is associated to the education, technology and marketing
                     sectors
@@ -90,14 +90,14 @@
 
         <div class="row">
           <div class="col-md-6 responsive-about">
-            <h1 class="mt-4">About</h1>
+            <h1 data-i18n-key="about-1" class="mt-4">About</h1>
             <br>
-            <h1 class="mb-4">TSA Holding</h1>
+            <h1 data-i18n-key="about-2" class="mb-4">TSA Holding</h1>
 
-            <p class="mt-3"> 
-              To meet the needs of the modern trader, our world-class brokerage services are spearheaded by market experts with extensive knowledge and experience in the industry. Our commitment to growth and innovation keep us ahead of the curve, while we continue to uphold the highest professional standard for our clients.
+            <p data-i18n-key="about-3" class="mt-3"> 
+              TSA Capital Holding Ltd is an operating holding company that owns a number of companies related to education, technology and marketing, which operates in Latin America and some European and Asian countries.
             </p>
-            <p class="margin-bottom-about">
+            <p data-i18n-key="about-4" class="margin-bottom-about">
               TSA Capital Holding Ltd is also actively involved in the
               production and sale of online courses, as well as consulting,
               promotion, digital media, and marketing services for its clients.
@@ -118,14 +118,14 @@
       <div class="container align-self-center">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h1 class="mt-5">
+            <h1 data-i18n-key="ourBrands-1" class="mt-5">
               OUR BRANDS
             </h1>
             <br>
             <table class="ml-auto mr-auto span-responsive">
               <tr>
                 <td>
-                  <span>We inspire lives and move forward side by side with technology, so that people can explore possibilities and gain knowledge, achieve goals, and grow, always succeeding in their objectives.</span>
+                  <span data-i18n-key="ourBrands-2">We inspire lives and move forward side by side with technology, so that people can explore possibilities and gain knowledge, achieve goals, and grow, always succeeding in their objectives.</span>
                 </td>
               </tr>
             </table> 
@@ -142,7 +142,7 @@
               height="100%"
               style="margin-bottom: 20px"
             />
-            <p class="mb-5">
+            <p data-i18n-key="ourBrands-3" class="mb-5">
               HD TRADE PARTICIPAÇÕES LTDA<br />
               TRADE STARS BRAZIL
             </p>
@@ -155,7 +155,7 @@
               height="100%"
               style="margin-bottom: 20px"
             />
-            <p class="mb-5">
+            <p data-i18n-key="ourBrands-4" class="mb-5">
               MN TECNOLOGIA LTDA<br />
               MONEY NOW NEWS
             </p>
@@ -168,7 +168,7 @@
               height="100%"
               style="margin-bottom: 20px"
             />
-            <p class="mb-5">
+            <p data-i18n-key="ourBrands-5" class="mb-5">
               BLACK MENTORY AGENCY LTDA<br />
               TRADE STARS LATAM
             </p>
@@ -181,7 +181,7 @@
       <div>
         <div class="row">
           <div class="col-md-6 align-self-center responsive-contact">
-          <h1>CONTACT US</h1>
+          <h1 data-i18n-key="contact-1">CONTACT US</h1>
           <a href="mailto:tsacapitalholding@gmail.com?subject=Contato" style="color: black;">
             tsacapitalholding@gmail.com
           </a>
@@ -195,19 +195,25 @@
       </div>
     </section>
 
-    <footer class="background-footer p-2">
+    <footer id="footer" class="background-footer p-2">
       <div>
         <div class="row">
         <div class="col-md-6 display-flex-footer" style="color: white;">
-       <p class="mt-auto mb-auto text-center p-2">2023 © Copyright - All Rights reserved.</p>
+       <p data-i18n-key="copy-right" class="mt-auto mb-auto text-center p-2">2023 © Copyright - All Rights reserved.</p>
         </div>
 
        <div class="col-md-6 navbar-expand-md navbar-custom">
       <ul class="navbar-nav p-2">
-        <li class="nav-item hover-underline-animation text-center-footer-ml"><a class="nav-link" href="#one_paralax">Home</a></li>
-        <li class="nav-item hover-underline-animation text-center-footer"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item hover-underline-animation text-center-footer"><a class="nav-link" href="#ourBrands">Brands</a></li>
-        <li class="nav-item hover-underline-animation text-center-footer"><a class="nav-link" href="#contact">Contact US</a></li>
+        <li onclick="window.location.href='#one_paralax'" data-i18n-key="nav-5" class="nav-item nav-link hover-underline-animation text-center-footer-ml"><a class="" href="#one_paralax">Home</a></li>
+        <li onclick="window.location.href='#about'" data-i18n-key="nav-6" class="nav-item nav-link hover-underline-animation text-center-footer"><a class="" href="#about">About</a></li>
+        <li onclick="window.location.href='#ourBrands'" data-i18n-key="nav-7" class="nav-item nav-link hover-underline-animation text-center-footer"><a class="" href="#ourBrands">Brands</a></li>
+        <li onclick="window.location.href='#contact'" data-i18n-key="nav-8" class="nav-item nav-link hover-underline-animation text-center-footer"><a class="" href="#contact">Contact US</a></li>
+        <li class="nav-item text-center-select">
+          <select data-i18n-switcher class="nav-link nav-link-custom-select">
+            <option data-i18n-key="ts-1" value="en">English</option>
+            <option data-i18n-key="ts-2" value="br">Brazilian Portuguese</option>
+          </select>
+        </li>
       </ul>
       </div>
        </div>
@@ -233,5 +239,6 @@
     ></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/translation.js"></script>
   </body>
 </html>

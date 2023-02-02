@@ -282,6 +282,21 @@ header.sticky a:hover {
   margin-left: auto;
 }
 
+.nav-link-custom-select {
+  display: block;
+  color: black;
+  width: 200px;
+  padding: 5px;
+  margin: 0 10px;
+}
+
+#footer li {
+  color: #fff;
+  display: inline;
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 344.99px) {
   .centralizar-sm {
@@ -358,6 +373,15 @@ header.sticky a:hover {
 
   .span-responsive {
     width: 221px;
+  }
+
+  .text-center-select {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hover-underline-animation:after {
+    width: 0;
   }
 }
 
@@ -442,6 +466,15 @@ header.sticky a:hover {
 
   .span-responsive {
     width: 276px;
+  }
+
+  .text-center-select {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hover-underline-animation:after {
+    width: 0;
   }
 }
 
