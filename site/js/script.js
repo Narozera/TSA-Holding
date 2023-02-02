@@ -26,9 +26,9 @@ window.addEventListener("scroll", () => {
   let header = document.querySelector(".header");
   header.classList.toggle("sticky", window.scrollY > 150);
   if (window.scrollY > 150) {
-    document.getElementById("logo").src = "img/Logo preto e azul.png";
+    document.getElementById("logo").src = "img/Pronta tsa preto e azul.png";
   } else {
-    document.getElementById("logo").src = "img/Logo png.png";
+    document.getElementById("logo").src = "img/Pronta branca e azul.png";
   }
 
   if (window.scrollY > 150) {
