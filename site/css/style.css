@@ -284,10 +284,12 @@ header.sticky a:hover {
 
 .nav-link-custom-select {
   display: block;
-  color: black;
+  color: white;
   width: 200px;
   padding: 5px;
   margin: 0 10px;
+  text-align: center;
+  background-color: #181818;
 }
 
 #footer li {
