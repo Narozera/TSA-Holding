@@ -21,8 +21,23 @@ function delClass(id, classe) {
 }
 
 window.addEventListener("scroll", () => {
+  let elemento = document.getElementById("btn-responsive");
+
   let header = document.querySelector(".header");
   header.classList.toggle("sticky", window.scrollY > 150);
+  if (window.scrollY > 150) {
+    document.getElementById("logo").src = "img/Logo preto e azul.png";
+  } else {
+    document.getElementById("logo").src = "img/Logo png.png";
+  }
+
+  if (window.scrollY > 150) {
+    elemento.classList.add("apply-black");
+    elemento.classList.remove("text-white");
+  } else {
+    elemento.classList.remove("apply-black");
+    elemento.classList.add("apply-white");
+  }
 });
 
 function Geeks(id) {
